@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 
 import '../widgets/chats.dart';
+import '../widgets/side_drawer.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -12,8 +13,11 @@ class Home extends StatelessWidget {
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search, size: 25))
         ],
+        brightness: Brightness.light,
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: SideDrawer(),
+      ),
       body: Chats(),
       floatingActionButton: CircleAvatar(
           radius: 25,

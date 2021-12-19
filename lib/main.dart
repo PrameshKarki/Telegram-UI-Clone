@@ -18,9 +18,10 @@ class App extends StatelessWidget {
           textTheme: ThemeData.light().textTheme.copyWith(
               headline1: TextStyle(
                   color: Colors.white,
-                  fontSize: 20,
+                  fontSize: 18,
                   fontWeight: FontWeight.w500),
-              bodyText1: TextStyle(color: Colors.grey))),
+              bodyText1: TextStyle(color: Colors.grey),
+              bodyText2: TextStyle(color: Colors.white, fontSize: 16))),
       initialRoute: "/",
       routes: {"/": (ctx) => Home()},
     );

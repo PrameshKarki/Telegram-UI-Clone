@@ -1,7 +1,9 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class Avatar extends StatelessWidget {
-  String name;
+  final String name;
 
   Avatar(this.name);
 
@@ -17,7 +19,8 @@ class Avatar extends StatelessWidget {
         avatar,
         style: TextStyle(fontSize: 22, color: Colors.white),
       ),
-      backgroundColor: Colors.orange,
+      backgroundColor:
+          Colors.primaries[Random().nextInt(Colors.primaries.length)],
     );
   }
 }

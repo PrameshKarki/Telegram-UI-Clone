@@ -50,7 +50,7 @@ class ChatItem extends StatelessWidget {
                 ),
                 Text(
                   userChat.time as String,
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 14),
                 ),
               ],
             ),
