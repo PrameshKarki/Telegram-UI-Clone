@@ -13,7 +13,6 @@ class Home extends StatelessWidget {
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search, size: 25))
         ],
-        brightness: Brightness.light,
       ),
       drawer: Drawer(
         child: SideDrawer(),

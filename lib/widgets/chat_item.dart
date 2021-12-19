@@ -65,9 +65,13 @@ class ChatItem extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4),
                     color: Color(0xff5B97E1)),
                 child: Center(
-                    child: Text(
-                  userChat.unseenMessageCount.toString(),
-                  style: TextStyle(color: Colors.white),
+                    child: FittedBox(
+                  child: Text(
+                    userChat.unseenMessageCount.toString(),
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 )),
               )
           ],
